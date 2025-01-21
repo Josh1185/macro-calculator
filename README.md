@@ -1,0 +1,3 @@
+Application: A simple macro-nutrient calculator that displays your recommended daily values of calories, carbs, protein, and fat. All values are calculated based on age, gender, height, weight, activity level, and overall health goals. For the calculations, I used the Mifflin-St Jeor Equation for the BMR, and I used that value to calculate the TDEE (Total Daily Energy Expenditure).
+
+Purpose: As someone who is interested in staying fit and promoting healthy diets, I wanted to create my own simple macro-nutrient calculator, and doing so helped me learn how to perform calculations based on HTML form input values.
