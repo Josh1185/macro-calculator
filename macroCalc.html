@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="macroCalc.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <title>Macronutrient Calculator</title>
+</head>
+<body>
+  <form class="macro-calculator">
+    <h1>Macronutrient Calculator</h1>
+
+    <div>
+      <Label for="age-input">Age</Label>
+      <input type="number" min="18" max="80" placeholder="18" id="age-input" required><span>Range: (18-80)</span>
+    </div>
+    
+    <div>
+      <label for="gender-input">Gender</label>
+      <select id="gender-input" required>
+        <option value="male" name="gender">Male</option>
+        <option value="female" name="gender">Female</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Height (feet & inches)
+        <input id="height-feet" type="number" min="0" placeholder="ft" required>
+        <input id="height-inches" type="number" min="0" placeholder="in" required></label>
+    </div>
+
+    <div>
+      <label for="weight-input">Weight (lbs)</label>
+      <input type="number" id="weight-input" placeholder="lbs" required>
+    </div>
+
+    <div>
+      <label for="activity-level-input">Activity Level</label>
+      <select id="activity-level-input" required>
+        <option value="sedentary">Sedentary (little to no exercise)</option>
+        <option value="lightly-active">Lightly active (light exercise/sports 1-3 days/week)</option>
+        <option value="moderately-active">Moderately active (moderate exercise/sports 3-5 days/week)</option>
+        <option value="very-active">Very active (hard exercise/sports 6-7 days/week)</option>
+        <option value="super-active">Super active (very hard exercise, physical job, or training twice a day)</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="goal-input">What is your goal?</label>
+      <select id="goal-input" required>
+        <option value="balanced">Maintain weight</option>
+        <option value="fat-loss">Fat loss</option>
+        <option value="muscle-gain">Muscle gain</option>
+      </select>
+    </div>
+
+    <button type="submit" id="submit-btn">Calculate</button>
+  </form>
+
+  <div class="outputs-wrapper">
+    <div id="outputs">
+      <h3>Your Goals:</h3>
+      <p id="calorie-output">x calories</p>
+      <p id="carb-output">x grams of carbs</p>
+      <p id="protein-output">x grams of protein</p>
+      <p id="fat-output">x grams of fat</p>
+      <button id="back-btn">Back</button>
+    </div>
+  </div>
+
+  <script type="module" src="macroCalc.js"></script>
+</body>
+</html>
